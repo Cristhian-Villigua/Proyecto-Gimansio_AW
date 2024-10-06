@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../img/progreso-metas/logo.webp" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/progreso.css">
+    <script src="../js/progreso.js"></script>
+    <title>Progreso-Meta - Gimnasio Universitario</title>
+</head>
+<body>
+     <header>
+        <div class="logo">
+            <img src="../img/progreso-metas/logo.webp" alt="Logo">
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/progreso-metas/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../img/progreso-metas/instagran.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../img/progreso-metas/x.png" alt="Twitter">
+            </a>
+        </div>
+        <nav id="menuprincipal">
+            <div>
+                <a href="../cliente/index.html"><b>Inicio</b></a>
+                <a href="../cliente/clases.html"><b>Clases</b></a>
+                <a href="../cliente/membresia.html"><b>Membresía</b></a>
+                <a href="../cliente/progreso-y-metas.html"><b>Progreso</b></a>
+            </div>
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <div class="user-info">
+            <p>Juan Macías</p>
+            <p>JuanCarlos@hotmail.com</p>
+        </div>
+        <hr>
+        <a href="../cliente/perfil.html">Perfil</a>
+        <hr>
+        <a href="../servidor/Login.html">Log Out</a>
+    </aside>
+    <main>
+        <div class="cabeza">
+            <div class="progress-header">
+                <h2>Progresos y Metas</h2>
+                <p>Visualiza y gestiona tus progresos y metas en el gimnasio.</p>
+            </div>
+            <div class="progress-summary">
+                <div class="summary-card">
+                    <h3>Metas Completadas</h3>
+                    <p id="metas-completadas">0</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Calorías Quemadas</h3>
+                    <p id="calorias-quemadas">0</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Tiempo de Ejercicio</h3>
+                    <p id="tiempo-ejercicio">0h 0m</p>
+                </div>
+            </div>
+        </div>
+        <div class="progress-container">
+            <section class="progress-card">
+                <h3>Metas Alcanzadas</h3>
+                <ul id="metas-alcanzadas">
+                    <!-- Lista de metas alcanzadas -->
+                </ul>
+            </section>
+            <section class="progress-card">
+                <h3>Nuevas Metas</h3>
+                <form id="new-goal-form">
+                    <input type="text" id="goal-name" name="goal-name" placeholder="Nombre de la meta" required>
+                    <input type="number" id="goal-target" name="goal-target" placeholder="Objetivo (e.g., 10 km, 5 kg)" required>
+                    <button type="submit">Añadir Meta</button>
+                </form>
+                <ul id="nuevas-metas">
+                    <!-- Lista de nuevas metas -->
+                </ul>
+            </section>
+            <section class="progress-card">
+                <h3>Registro de Actividades</h3>
+                <form id="activity-form">
+                    <input type="text" id="activity-name" name="activity-name" placeholder="Nombre de la actividad" required>
+                    <input type="number" id="activity-duration" name="activity-duration" placeholder="Duración (minutos)" required>
+                    <input type="number" id="activity-calories" name="activity-calories" placeholder="Calorías quemadas" required>
+                    <button type="submit">Registrar Actividad</button>
+                </form>
+                <ul id="registro-actividades">
+                    <!-- Lista de actividades -->
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="#terminos">Términos y Condiciones</a>
+            <a href="#privacidad">Política de Privacidad</a>
+        </nav>
+
+        <div class="contacto">
+            <p>Gimnasio Universitario</p>
+            <p>Dirección: Calle 12, Vía San Mateo</p>
+            <p>Teléfono: 444-6957</p>
+            <p>Email: gimnasio@hotmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>

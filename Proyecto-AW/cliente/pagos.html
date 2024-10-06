@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="../img/pagos-img/logo.webp" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos - Gimnasio Universitario</title>
+    <link rel="stylesheet" href="../css/pagos.css">
+    <script defer src="../js/pagos.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/clases-img/logo.webp" alt="Logo">
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/clases-img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../img/clases-img/instagran.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../img/clases-img/x.png" alt="Twitter">
+            </a>
+        </div>
+        <nav id="menuprincipal">
+            <div>
+                <a href="../cliente/index.html"><b>Inicio</b></a>
+                <a href="../cliente/clases.html"><b>Clases</b></a>
+                <a href="../cliente/membresia.html"><b>Membresía</b></a>
+                <a href="../cliente/progreso-y-metas.html"><b>Progreso</b></a>
+            </div>
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <div class="user-info">
+            <p>Juan Macías</p>
+            <p>JuanCarlos@hotmail.com</p>
+        </div>
+        <hr>
+        <a href="../cliente/perfil.html">Perfil</a>
+        <hr>
+        <a href="../servidor/Login.html">Log Out</a>
+    </aside>
+    <main>
+        <label for="membership-type">
+            <h2>Seleccione el tipo de membresía:
+        </label>
+        <select id="membership-type" class="custom-select" onchange="guardarSeleccion()">
+            <option value="">Seleccione una opción</option>
+            <option value="day">Membresía por Día</option>
+            <option value="month">Membresía por Mes</option>
+            <option value="quarter">Membresía Trimestral</option>
+            <option value="semester">Membresía Semestral</option>
+            <option value="year">Membresía Anual</option>
+        </select>
+        <div class="container">
+            <div class="parte izquierda" id="membership-info">
+            </div>
+            <div class="parte derecha">
+                <form id="membership-form">
+                    <div class="form-section">
+                        <p>Método de pago:</p>
+                        <div class="payment-option">
+                            <input type="radio" id="credit-card" name="payment-method" value="credit-card"
+                                onchange="mostrarPagos()">
+                            <label for="credit-card" class="payment-method-label">Tarjeta de crédito/débito</label>
+                            <img src="../img/pagos-img/visa.png" alt="Visa Logo">
+                            <img src="../img/pagos-img/master.png" alt="MasterCard Logo">
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="paypal" name="payment-method" value="paypal"
+                                onchange="mostrarPagos()">
+                            <label for="paypal" class="payment-method-label">PayPal</label>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal Logo">
+                        </div>
+                    </div>
+                </form>
+                <hr class="divider">
+                <div class="payment-info" id="payment-info">
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="detalles">
+            <h3>Historial de Transacciones</h3>
+            <div class="historial-transacciones">
+                <table>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Descripción</th>
+                        <th>Monto</th>
+                        <th>Estado</th>
+                        <th>Comprobante</th>
+                    </tr>
+                    <tr>
+                        <td>10/09/2024</td>
+                        <td>Membresía Mensual</td>
+                        <td>$20</td>
+                        <td>Pagado</td>
+                        <td><a href="#">Descargar</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="#terminos">Términos y Condiciones</a>
+            <a href="#privacidad">Política de Privacidad</a>
+        </nav>
+        <div class="contacto">
+            <p>Gimnasio Universitario</p>
+            <p>Dirección: Calle 12, Vía San Mateo</p>
+            <p>Teléfono: 444-6957</p>
+            <p>Email: gimnasio@hotmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>

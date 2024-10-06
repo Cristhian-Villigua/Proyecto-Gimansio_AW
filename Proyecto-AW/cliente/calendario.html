@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../img/calendario-img/logo.webp" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/calendario.css">
+    <script src="../js/calendario.js"></script>
+    <title>Calendario - Gimnasio Universitario</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/membresia-img/logo.webp" alt="Logo">
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/membresia-img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../img/membresia-img/instagran.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../img/membresia-img/x.png" alt="Twitter">
+            </a>
+        </div>
+        <nav id="menuprincipal">
+            <div>
+                <a href="../cliente/index.html"><b>Inicio</b></a>
+                <a href="../cliente/clases.html"><b>Clases</b></a>
+                <a href="../cliente/membresia.html"><b>Membresía</b></a>
+                <a href="../cliente/progreso-y-metas.html"><b>Progreso</b></a>
+            </div>
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <div class="user-info">
+            <p>Juan Macías</p>
+            <p>JuanCarlos@hotmail.com</p>
+        </div>
+        <hr>
+        <a href="../cliente/perfil.html">Perfil</a>
+        <hr>
+        <a href="../servidor/Login.html">Log Out</a>
+    </aside>
+    <main>
+        <div class="calendar-header">
+            <h2>Calendario Personal</h2>
+            <p>Aquí puedes agregar y eliminar elementos según tu preferencia.</p>
+        </div>
+        <div class="calendar-container">
+            <div class="calendar-controls">
+                <button onclick="prevMonth()">Anterior</button>
+                <span id="current-month-year"></span>
+                <button onclick="nextMonth()">Siguiente</button>
+            </div>
+            <div class="calendar" id="calendar">
+                <!-- Calendario dinámico -->
+            </div>
+        </div>
+        <div class="event-details">
+            <h3>Detalles del Evento</h3>
+            <form id="event-form">
+                <input type="text" id="event-name" name="event-name" placeholder="Nombre del evento" required>
+                <input type="datetime-local" id="event-datetime" name="event-datetime" required>
+                <textarea id="event-description" name="event-description" placeholder="Descripción del evento"
+                    required></textarea>
+                <button type="submit">Añadir Evento</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="#terminos">Términos y Condiciones</a>
+            <a href="#privacidad">Política de Privacidad</a>
+        </nav>
+
+        <div class="contacto">
+            <p>Gimnasio Universitario</p>
+            <p>Dirección: Calle 12, Vía San Mateo</p>
+            <p>Teléfono: 444-6957</p>
+            <p>Email: gimnasio@hotmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>

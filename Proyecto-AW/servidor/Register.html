@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../img/register-img/icono.webp" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Registrarse - Software de Gestión Gimnasio Universitario</title>
+</head>
+<body>
+    <div class="box">
+        <form class="form" id="register-form">
+            <h2>Registro del Usuario</h2>
+            <div class="inputbox">
+                <label for="name">Nombres:</label>
+                <input type="text" id="name" name="name"  placeholder=" " autofocus>
+                <span class="error-message"></span>
+            </div>
+            <div class="inputbox">
+                <label class="form-label" for="lastname">Apellidos:</label>
+                <input type="text" id="lastname" name="lastname" placeholder=" " >
+                <span class="error-message"></span>
+            </div>
+            <div class="inputbox">
+                <label class="form-label" for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder=" ">
+                <span class="error-message"></span>
+            </div>
+            <div class="inputbox">
+                <label class="form-label" for="pass">Contraseña:</label>
+                <input type="password" id="pass" name="pass" placeholder=" ">
+                <span class="error-message"></span>
+            </div>
+            <div class="inputbox">
+                <label class="form-label" for="conf-pass">Confirmar Contraseña:</label>
+                <input type="password" id="conf-pass" name="conf-pass" placeholder=" ">
+                <span class="error-message"></span>
+            </div>
+            <button type="submit">Registrarse</button>
+            <div class="register">
+                <p>Ya tienes cuenta
+                <a href="../servidor/Login.html">Iniciar Sesión</a></p> 
+            </div>
+        </form>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../img/register-img/icono.webp">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <div class="box">
+        <form class="form" id="login-form">
+            <h2>
+                <img src="../img/register-img/icono.webp" class="icono">Iniciar Sesión
+            </h2>
+            <div class="inputbox">
+                <label class="form-label" for="email">Correo electrónico:</label>
+                <input type="email" name="email" id="email" autofocus>
+                <span class="error-message"></span>
+            </div>
+            <div class="inputbox">
+                <label class="form-label" for="pass">Contraseña:</label>
+                <input type="password" name="pass" id="pass">
+                <span class="error-message"></span>
+            </div>
+            <div class="forget">
+                <label for="">
+                    <input type="checkbox"> Remember me
+                </label>
+                <label for="">
+                    <a href="">Olvidaste tu contraseña</a>
+                </label>
+            </div>
+            <button>Ingresar</button>
+            <div class="register">
+                <p>No tienes una cuenta?
+                <a href="../servidor/Register.html">Registrate</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>
+<!--onclick="window.location.href='../cliente/index.html'"-->

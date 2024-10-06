@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="../img/membresia-img/logo.webp">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membresía - Gimnasio Universitario</title>
+    <link rel="stylesheet" href="../css/membresia.css">
+    <script src="../js/membresia.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/membresia-img/logo.webp" alt="Logo">
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/membresia-img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../img/membresia-img/instagran.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../img/membresia-img/x.png" alt="Twitter">
+            </a>
+        </div>
+        <nav id="menuprincipal">
+            <div>
+                <a href="../cliente/index.html"><b>Inicio</b></a>
+                <a href="../cliente/clases.html"><b>Clases</b></a>
+                <a href="../cliente/membresia.html"><b>Membresía</b></a>
+                <a href="../cliente/progreso-y-metas.html"><b>Progreso</b></a>
+            </div>
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <div class="user-info">
+            <p>Juan Macías</p>
+            <p>JuanCarlos@hotmail.com</p>
+        </div>
+        <hr>
+        <a href="../cliente/perfil.html">Perfil</a>
+        <hr>
+        <a href="../servidor/Login.html">Log Out</a>
+    </aside>
+    <main>
+     <div class="info-container">
+        <h2 class="section-title">Información General</h2>
+        <div class="general-info">
+            <p>Estado de la membresía: Inactiva</p>
+            <p>Tipo de membresía: Nada</p>
+            <p>Fecha de inicio y fecha de vencimiento de la membresía: Nada</p>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="buttons-container">
+        <button class="renew-button">Renovar Membresía</button>
+        <button class="cancel-button">Cancelar Membresía</button>
+    </div>
+    <hr class="divider">
+    <div class="plans">
+        <h2 class="section-title">Planes de Membresía</h2>
+        <div class="plan-cards">
+            <div class="plan-card">
+                <img src="../img/membresia-img/DIA.png" alt="Plan por Día">
+                <button onclick="comprar('day')">Comprar</button>
+            </div>
+
+            <div class="plan-card">
+                <img src="../img/membresia-img/mensual.png" alt="Plan Mensual">
+                <button onclick="comprar('month')">Comprar</button>
+            </div>
+
+            <div class="plan-card">
+                <img src="../img/membresia-img/trimestral.png" alt="Plan Trimestral">
+                <button onclick="comprar('quarter')">Comprar</button>
+            </div>
+
+            <div class="plan-card">
+                <img src="../img/membresia-img/semestral.png" alt="Plan Semestral">
+                <button onclick="comprar('semester')">Comprar</button>
+            </div>
+
+            <div class="plan-card">
+                <img src="../img/membresia-img/anual.png" alt="Plan Anual">
+                <button onclick="comprar('year')">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="combined-plans">
+        <h2 class="section-title">Beneficios de la Membresía</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <h3>Membresía por Día</h3>
+                <div class="benefit-content">
+                    <img src="../img/membresia-img/DIA.png" alt="Membresía por Día">
+                    <ul>
+                        <li><b>- Acceso Ilimitado a Equipos de Gimnasio:</b> Utiliza todos los equipos de gimnasio sin restricciones durante el día de tu membresía.</li>
+                        <li><b>- Sin acceso a inscribirse a clases Grupales:</b> La membresía diaria no incluye la opción de inscribirse en las clases grupales del gimnasio.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="benefit">
+        <h3>Membresía por Mes</h3>
+            <div class="benefit-content">
+                <img src="../img/membresia-img/mensual.png" alt="Membresía por Mes">
+                    <ul>
+                        <li><b>- Acceso Ilimitado a Equipos de Gimnasio:</b> Acceso completo a todos los equipos y máquinas de gimnasio durante el mes.</li>
+                        <li><b>- Acceso a inscribirse a Clases Grupales:</b> Participa en todas las clases grupales ofrecidas, como yoga, spinning, y más.</li>
+                        <li><b>- Uso de la Piscina y Sauna:</b> Disfruta del uso ilimitado de la piscina y las instalaciones de sauna durante todo el mes.</li>
+                        <li><b>- Descuento en Eventos Especiales (5%):</b> Recibe un 5% de descuento en todos los eventos especiales organizados por el gimnasio, como talleres y seminarios.</li>
+                    </ul>
+            </div>
+    </div>
+    <div class="benefit">
+        <h3>Membresía Trimestral</h3>            
+            <div class="benefit-content">            
+                <img src="../img/membresia-img/trimestral.png" alt="Membresía Trimestral">
+                    <ul>
+                        <li><b>- Acceso Ilimitado a Equipos de Gimnasio:</b> Uso ilimitado de todos los equipos de gimnasio durante tres meses.</li>
+                        <li><b>- Acceso a inscribirse a Clases Grupales:</b> Participa en todas las clases grupales sin costo adicional.</li>
+                        <li><b>- Uso de la Piscina y Sauna:</b> Acceso libre a la piscina y sauna durante todo el trimestre.</li>
+                        <li><b>- Descuento en Eventos Especiales (10%):</b> Disfruta de un 10% de descuento en eventos especiales organizados por el gimnasio.</li>
+                        <li><b>- Una Sesión Gratuita con un Entrenador Personal:</b> Recibe una sesión de entrenamiento personalizado gratuita para ayudarte a alcanzar tus metas de fitness.</li>
+                    </ul>
+            </div>
+    </div>
+    <div class="benefit">
+        <h3>Membresía Semestral</h3>
+            <div class="benefit-content">
+                <img src="../img/membresia-img/semestral.png" alt="Membresía Semestral">
+                    <ul>
+                        <li><b>- Acceso Ilimitado a Equipos de Gimnasio:</b> Uso sin restricciones de todos los equipos y máquinas del gimnasio durante seis meses.</li>
+                        <li><b>- Acceso a inscribirse a Clases Grupales:</b> Acceso completo a todas las clases grupales.</li>
+                        <li><b>- Uso de la Piscina y Sauna:</b> Disfruta de la piscina y sauna sin límites durante el semestre.</li>
+                        <li><b>- Descuento en Eventos Especiales (15%):</b> Obtén un 15% de descuento en todos los eventos especiales.</li>
+                        <li><b>- Tres Sesiones Gratuitas con un Entrenador Personal:</b> Aprovecha tres sesiones de entrenamiento personal gratuitas.</li>
+                        <li><b>- Acceso Prioritario a Nuevas Clases:</b> Inscríbete primero en nuevas clases y actividades antes de que se abran al público general.</li>
+                    </ul>
+            </div>
+    </div>
+    <div class="benefit">
+        <h3>Membresía Anual</h3>
+            <div class="benefit-content">
+                <img src="../img/membresia-img/anual.png" alt="Membresía Anual">
+                    <ul>
+                        <li><b>- Acceso Ilimitado a Equipos de Gimnasio:</b> Acceso completo y sin restricciones a todas las instalaciones y equipos del gimnasio durante un año entero.</li>
+                        <li><b>- Acceso a inscribirse a Clases Grupales:</b> Participa en cualquier clase grupal que desees sin costo adicional durante el año.</li>
+                        <li><b>- Uso de la Piscina y Sauna:</b> Utiliza la piscina y las instalaciones de sauna sin límites durante todo el año.</li>
+                        <li><b>- Descuento en Eventos Especiales (20%):</b> Recibe un 20% de descuento en todos los eventos especiales organizados por el gimnasio.</li>
+                        <li><b>- Seis Sesiones Gratuitas con un Entrenador Personal:</b> Aprovecha seis sesiones de entrenamiento personal sin costo adicional.</li>
+                        <li><b>- Acceso Prioritario a Nuevas Clases:</b> Inscríbete primero en nuevas clases y actividades antes de que se abran al público general.</li>
+                        <li><b>- Descuento del 10% en Productos de la Tienda del Gimnasio:</b> Obtén un 10% de descuento en todos los productos de la tienda del gimnasio, incluyendo ropa deportiva, suplementos, y accesorios de fitness.</li>
+                        </ul>
+            </div>
+    </div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="#terminos">Términos y Condiciones</a>
+            <a href="#privacidad">Política de Privacidad</a>
+        </nav>
+        <div class="contacto">
+            <p>Gimnasio Universitario</p>
+            <p>Dirección: Calle 12, Vía San Mateo</p>
+            <p>Teléfono: 444-6957</p>
+            <p>Email: gimnasio@hotmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>

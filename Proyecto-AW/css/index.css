@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dad9d9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: #252424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+header .logo img {
+    height: 90px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+header .social-media {
+    display: flex;
+    align-items: center;
+}
+header .social-media a img {
+    height: 35px;
+    margin: 0 20px;
+    border-radius: 10%;
+}
+.social-media img:hover{
+    transform: scale(1.15);
+    filter: drop-shadow(1px 1px 20px rgb(34, 194, 34));
+}
+#menuprincipal {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+#menuprincipal a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: white;
+}
+#menuprincipal a:hover{
+    text-shadow: rgb(240, 69, 86) 1.5px 1.5px;
+}
+header .sidebar-icon {
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+.sidebar {
+    display: none;
+    background-color: #292727d0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 30vh;
+    width: 250px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+    border-radius: 10px;
+}
+.sidebar .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    text-align: right;
+}
+.sidebar .close-btn:hover{
+    text-shadow: rgb(240, 69, 86) 1.5px 1.5px;
+}
+.sidebar .user-info {
+    margin-bottom: 20px;
+}
+
+.sidebar .user-info p {
+    color: white;;
+    margin: 5px 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-shadow: 1px 1px black;
+}
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background-color: #000000;
+    margin: 10px 0;
+    font-weight: 600;
+    text-shadow: 1px 1px #fff;
+}
+.sidebar a {
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-shadow: 1px 1px black;
+}
+.sidebar a:hover{
+    text-shadow: rgb(240, 69, 86) 1.5px 1.5px;
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    margin: 60px;
+}
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 200px;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(1px 1px 20px blueviolet);
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+.card p:hover{
+    text-shadow: rgb(240, 69, 86) 1.5px 1.5px;
+}
+footer {
+    background-color: #252424;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer nav.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer .contacto p {
+    margin: 5px 0;
+}
+.contacto{
+    margin-right: 10%;
+}

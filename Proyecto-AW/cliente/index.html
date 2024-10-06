@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../img/index-img/logo.webp" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Universitario</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/index-img/logo.webp" alt="Logo">
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/index-img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../img/index-img/instagran.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../img/index-img/x.png" alt="Twitter">
+            </a>
+        </div>
+        <nav id="menuprincipal">
+            <div>
+                <a href="../cliente/index.html"><b>Inicio</b></a>
+                <a href="../cliente/clases.html"><b>Clases</b></a>
+                <a href="../cliente/membresia.html"><b>Membresía</b></a>
+                <a href="../cliente/progreso-y-metas.html"><b>Progreso</b></a>
+            </div>
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <div class="user-info">
+            <p>Juan Macías</p>
+            <p>JuanCarlos@hotmail.com</p>
+        </div>
+        <hr>
+        <a href="../cliente/perfil.html">Perfil</a>
+        <hr>
+        <a href="../servidor/Login.html">Log Out</a>
+    </aside>
+    <main>
+        <div class="cards-container">
+            <section class="card" id="membresia" onclick="navigateTo('../cliente/membresia.html')">
+                <img src="../img/index-img/Membresía.webp" alt="Membresía">
+                <p>Membresía</p>
+            </section>
+            <section class="card" id="inscripcion" onclick="navigateTo('../cliente/clases.html')">
+                <img src="../img/index-img/clases.png" alt="Inscripción en Clases">
+                <p>Inscripción en Clases</p>
+            </section>
+            <section class="card" id="pagos" onclick="navigateTo('../cliente/pagos.html')">
+                <img src="../img/index-img/pagos.webp" alt="Pagos y Facturación">
+                <p>Pagos y Facturación</p>
+            </section>
+            <section class="card" id="progreso" onclick="navigateTo('../cliente/progreso-y-metas.html')">
+                <img src="../img/index-img/progreso.webp" alt="Progreso y Metas">
+                <p>Progreso y Metas</p>
+            </section>
+            <section class="card" id="calendario" onclick="navigateTo('../cliente/calendario.html')">
+                <img src="../img/index-img/calendario.webp" alt="Calendario">
+                <p>Calendario</p>
+            </section>
+            <section class="card" id="problemas" onclick="navigateTo('../cliente/mantenimiento.html')">
+                <img src="../img/index-img/soporte.webp" alt="Problemas y Mantenimiento">
+                <p>Problemas y Mantenimiento</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="#terminos">Términos y Condiciones</a>
+            <a href="#privacidad">Política de Privacidad</a>
+        </nav>
+        <div class="contacto">
+            <p>Gimnasio Universitario</p>
+            <p>Dirección: Calle 12, Vía San Mateo</p>
+            <p>Teléfono: 444-6957</p>
+            <p>Email: gimnasio@hotmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
